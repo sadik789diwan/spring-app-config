@@ -9,4 +9,10 @@ eureka:
 
 spring:
   zipkin:
-    baseUrl: http://zipkin-svc:9422
+    baseUrl: http://zipkin-svc:9411
+
+management:
+  tracing:
+    sampling:
+      probability:  1.0
+
